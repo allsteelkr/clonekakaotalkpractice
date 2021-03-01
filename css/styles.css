@@ -1,9 +1,13 @@
 @import "reset.css";
 @import "status-bar.css";
 @import "variables.css";
+@import "login.css";
+@import "nav-bar.css";
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 1000vh;
 }
 
 .welcome-header {
@@ -24,43 +28,19 @@ body {
   margin-bottom: 90px;
 }
 
-#login-form {
+.screen__header {
   display: flex;
-  flex-direction: column;
-  margin: 0px 30px;
+  justify-content: space-between;
+  padding: 25px;
+  align-items: center;
+  padding-top: 40px;
 }
 
-#login-form input {
-  padding: 15px 0px;
-  border: none;
-  font-size: 18px;
-
-  margin-bottom: 20px;
+.header__icons span {
+  margin-left: 20px;
 }
 
-#login-form input:not([type="submit"]) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  transition: border-color 0.3s ease-in-out;
-}
-
-#login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-#login-form input:focus {
-  border-color: black;
-}
-
-#login-form input[type="submit"] {
-  background-color: var(--yellow);
-  cursor: pointer;
-  padding: 20px 0px;
-  border-radius: 10px;
-}
-
-#login-form a {
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-  font-size: 13px;
+.header__title {
+  font-size: 28px;
+  font-weight: 600;
 }
